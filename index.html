@@ -15,12 +15,6 @@
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <style>
-    body {
-      padding-top: 50px;
-      padding-bottom: 20px;
-    }
-  </style>
   <link rel="stylesheet" href="css/bootstrap-theme.min.css">
   <link rel="stylesheet" href="css/main.css">
 
@@ -31,28 +25,70 @@
   <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        
+
   <!-- Wrap all page content here -->
   <div id="wrap">
 
     <!-- Begin page content -->
     <div class="container">
       <div class="page-header">
-        <h1>Sticky footer with fixed navbar</h1>
+        <h1>Rectangles</h1>
       </div>
-      <p class="lead">Pin a fixed-height footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS. A fixed navbar has been added within <code>#wrap</code> with <code>padding-top: 60px;</code> on the <code>.container</code>.</p>
-      <p>Back to <a href="../sticky-footer">the default sticky footer</a> minus the navbar.</p>
+      <p class="lead">Step right in, find out if 2 rectangles intersect, enclose,
+        are adjacent and much more ... actually thats all there is.</p>
+
+      <div class="row">
+        <div class="col-md-6 form-panel">
+          <form class="form-horizontal">
+            <div class="form-group">
+              <input type="text" class="form-control" id="x1" placeholder="X Position Bottom Left Corent">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" id="y1" placeholder="Y Position Bottom Left Corent">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" id="width1" placeholder="Width">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" id="height1" placeholder="Height">
+            </div>
+          </form>
+        </div>
+        <div class="visible-xs visible-sm"><hr></div>
+        <div class="col-md-6 form-panel">
+          <form class="form-horizontal">
+            <div class="form-group">
+              <input type="text" class="form-control" id="x2" placeholder="X Position Bottom Left Corent">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" id="y2" placeholder="Y Position Bottom Left Corent">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" id="width2" placeholder="Width">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" id="height2" placeholder="Height">
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row main-btn-block">
+        <button type="button" class="btn btn-primary btn-lg btn-block">
+          <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> I'm Feeling Lucky
+        </button>
+      </div>
+
     </div>
   </div>
 
   <div id="footer">
     <div class="container">
-      <p class="text-muted credit">Example courtesy <a href="http://martinbean.co.uk">Martin Bean</a> and <a href="http://ryanfait.com/sticky-footer/">Ryan Fait</a>.</p>
+      <p class="text-muted credit">© <a href="https://github.com/arduima">Dimitri Kishkin</a></p>
     </div>
   </div>
 
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.x-git.min.js"></script>
   <script>
     window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
   </script>
