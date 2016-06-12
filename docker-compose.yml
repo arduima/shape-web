@@ -1,0 +1,12 @@
+shape-service:
+  ports:
+  - 8080:8080
+  tty: true
+  image: arduima/shape-service
+  stdin_open: true
+shape-web:
+  ports:
+  - 80:80
+  tty: true
+  image: arduima/shape-web
+  stdin_open: true

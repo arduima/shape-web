@@ -20,7 +20,7 @@ $( document ).ready(function() {
     console.log(JSON.stringify(request));
     $.ajax({
       type: "POST",
-      url: "http://localhost:8080/relationship",
+      url: "http://162.243.109.64:8080/relationship",
       data: JSON.stringify(request),
       success: function( data ) {
         var relationship = data['data']['relationship'];
