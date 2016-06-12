@@ -2,11 +2,11 @@ $( document ).ready(function() {
 
   $('#relationship-button').click(function() {
     var x1 = $('#x1').val();
-    var y1 = $('#x1').val();
+    var y1 = $('#y1').val();
     var width1 = $('#width1').val();
     var height1 = $('#height1').val();
     var x2 = $('#x2').val();
-    var y2 = $('#x2').val();
+    var y2 = $('#y2').val();
     var width2 = $('#width2').val();
     var height2 = $('#height2').val();
 
