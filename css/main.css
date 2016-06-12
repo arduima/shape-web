@@ -12,7 +12,7 @@
         -moz-border-radius: 0 !important;
              border-radius: 0 !important;
    }
-   
+
    html,
    body {
      height: 100%;
@@ -66,4 +66,8 @@
      padding-left: 100px;
      padding-right: 100px;
      padding-bottom: 50px;
+   }
+
+   .small-lead {
+     font-size: 10px;
    }
