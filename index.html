@@ -32,52 +32,62 @@
     <!-- Begin page content -->
     <div class="container">
       <div class="page-header">
-        <h1>Rectangles</h1>
+        <h1>Rectangles<sup>2</sup></h1>
       </div>
-      <p class="lead">Step right in, find out if 2 rectangles intersect, enclose, are adjacent or distinct.
-        <span class="small-lead">or something else if you find a bug</span>
+      <p class="lead">Step right in, find out if two rectangles intersect, enclose, are adjacent or distinct.
+        <span class="small-lead">or maybe even something else if you find any bugs</span>
       </p>
+      <!-- Relationship Alert -->
+      <div class="alert alert-info" role="alert" id="relationship-alert">
+        <strong id="relationship-type"></strong>
+        <span id="relationship-text">
+          <p><strong>Step 1:</strong> Fill in the form with yur favorite numbers</p>
+          <p><strong>Step 2:</strong> Feel lucky</p>
+          <p><strong>Step 3:</strong> Profit?</p>
+        </span>
+      </div>
       <div class="row">
-        <div class="col-md-6 form-panel">
-          <form class="form-horizontal">
-            <div class="form-group">
-              <input type="text" class="form-control" id="x1" placeholder="X Position Bottom Left Corent">
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" id="y1" placeholder="Y Position Bottom Left Corent">
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" id="width1" placeholder="Width">
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" id="height1" placeholder="Height">
-            </div>
-          </form>
-        </div>
-        <div class="visible-xs visible-sm"><hr></div>
-        <div class="col-md-6 form-panel">
-          <form class="form-horizontal">
-            <div class="form-group">
-              <input type="text" class="form-control" id="x2" placeholder="X Position Bottom Left Corent">
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" id="y2" placeholder="Y Position Bottom Left Corent">
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" id="width2" placeholder="Width">
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" id="height2" placeholder="Height">
-            </div>
-          </form>
-        </div>
+        <form id="rectangles-form">
+          <div class="col-md-6 form-panel">
+            <form class="form-horizontal">
+              <div class="form-group">
+                <input type="text" class="form-control" id="x1" placeholder="X Position Bottom Left Corent">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" id="y1" placeholder="Y Position Bottom Left Corent">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" id="width1" placeholder="Width">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" id="height1" placeholder="Height">
+              </div>
+            </form>
+          </div>
+          <div class="visible-xs visible-sm"><hr></div>
+          <div class="col-md-6 form-panel">
+            <form class="rectangles-form">
+              <div class="form-group">
+                <input type="text" class="form-control" id="x2" placeholder="X Position Bottom Left Corent">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" id="y2" placeholder="Y Position Bottom Left Corent">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" id="width2" placeholder="Width">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" id="height2" placeholder="Height">
+              </div>
+            </form>
+          </div>
+          <div class="row main-btn-block">
+            <button type="button" class="btn btn-primary btn-lg btn-block" id="relationship-button">
+              <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> I'm Feeling Lucky
+            </button>
+          </div>
+        </form>
       </div>
-      <div class="row main-btn-block">
-        <button type="button" class="btn btn-primary btn-lg btn-block">
-          <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> I'm Feeling Lucky
-        </button>
-      </div>
-
     </div>
   </div>
 
